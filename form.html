@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule Consultation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header></header>
+
+    <section class="breadcrumbs">
+      <nav aria-label="breadcrumb">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><span>></span></li>
+          <li><span aria-current="page">Consultation</span></li>
+        </ol>
+      </nav>
+    </section>
+
+    <main>
+      <section class="hero">
+        <h1>Schedule a Consultation</h1>
+        <p>
+          Please fill out the form below to schedule a consultation with one of
+          our Pexperts.
+        </p>
+      </section>
+
+      <section class="form-container">
+        <form
+          action="consultation.html"
+          method="post"
+          class="consultation-form"
+        >
+          <!-- User Information -->
+          <div class="form-group">
+            <label for="name"><i class="fas fa-user"></i> Your Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone"
+              ><i class="fas fa-phone"></i> Phone Number:</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="e.g., +1 234-567-8900"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email"
+              ><i class="fas fa-envelope"></i> Email Address:</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="e.g., yourname@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="timezone"
+              ><i class="fas fa-clock"></i> Time Zone:</label
+            >
+            <select id="timezone" name="timezone" required>
+              <option value="" disabled selected>Select your time zone</option>
+              <option value="pst">Pacific Standard Time (PST)</option>
+              <option value="mst">Mountain Standard Time (MST)</option>
+              <option value="cst">Central Standard Time (CST)</option>
+              <option value="est">Eastern Standard Time (EST)</option>
+            </select>
+          </div>
+
+          <!-- Pet Information -->
+          <div class="form-group">
+            <label for="pet-name"><i class="fas fa-paw"></i> Pet's Name:</label>
+            <input
+              type="text"
+              id="pet-name"
+              name="pet-name"
+              placeholder="Enter your pet's name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="pet-type"><i class="fas fa-dog"></i> Pet Type:</label>
+            <select id="pet-type" name="pet-type" required>
+              <option value="" disabled selected>Select your pet type</option>
+              <option value="cat">Cat</option>
+              <option value="dog">Dog</option>
+              <option value="bird">Bird</option>
+              <option value="fish">Fish</option>
+              <option value="small-animal">Small Animal</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="pet-age"
+              ><i class="fas fa-calendar"></i> Pet's Age (in years):</label
+            >
+            <input
+              type="number"
+              id="pet-age"
+              name="pet-age"
+              min="0"
+              placeholder="e.g., 2"
+              required
+            />
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn">
+            <i class="fas fa-paper-plane"></i> Submit
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="faq"><a href="faq.html">FAQ</a></div>
+      <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
+      <ul>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </ul>
+    </footer>
+  </body>
+</html>
