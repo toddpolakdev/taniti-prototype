@@ -24,7 +24,6 @@ main {
 }
 
 header {
-  /* height: 100px; */
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -42,9 +41,6 @@ header {
 
 .hero {
   text-align: center;
-  /* background: #e8f5e9; */
-  /* padding: 20px 20px;
-  margin: 20px 0; */
 }
 .hero h1 {
   font-size: 3.2em;
@@ -194,11 +190,10 @@ footer {
   border-bottom: 2px solid #f0f0f0;
 }
 
-/* General Styles for Lists */
 .content-ul {
   margin: 20px 0;
   padding-left: 20px;
-  list-style-type: none; /* Disable default bullets */
+  list-style-type: none;
   font-size: 1rem;
   color: #555;
 }
@@ -206,17 +201,16 @@ footer {
 .content-ul li {
   margin-bottom: 10px;
   line-height: 1.6;
-  padding-left: 20px; /* Space for the custom bullet */
+  padding-left: 20px;
   position: relative;
 }
 
-/* Custom Bullet Styling */
 .content-ul li::before {
-  content: "•"; /* Custom bullet symbol */
-  color: #66c7d4; /* Highlight bullet with a brand color */
+  content: "•";
+  color: #66c7d4;
   font-size: 1.2rem;
   position: absolute;
-  left: 0; /* Aligns the custom bullet */
+  left: 0;
   top: 0;
 }
 
@@ -314,6 +308,10 @@ footer {
   .menu li {
     text-align: center;
     margin: 10px 0;
+  }
+
+  .menu li:hover {
+    background-color: rgb(204, 204, 204);
   }
 
   .menu-toggle {
